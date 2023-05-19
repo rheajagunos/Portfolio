@@ -126,7 +126,7 @@ a:focus {
 }
 
 .back-to-top:hover i {
-    color: #414141;
+    color: #645caa;
 }
 
 
@@ -201,7 +201,7 @@ a:focus {
     
     .navbar-light.nav-sticky .navbar-nav .nav-link,
     .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
-        color: #414141;
+        color: #645caa;
     }
 
     .navbar-light .navbar-nav .nav-link:hover,
@@ -222,9 +222,12 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #EF233C;
+        color: #645caa;
     }
-    
+    .navbar .navbar-brand:hover{
+        color:#EF233C
+    }
+
     .navbar .navbar-nav {
         margin-top: 15px;
     }
@@ -248,7 +251,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: linear-gradient(#7895b2, rgba(238, 66, 86, 0.95)), url(img/home.jpg);
+    background: linear-gradient(#645caa, rgba(238, 66, 86, 0.95)), url(img/home.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -314,7 +317,7 @@ a:focus {
 
 .hero .hero-btn .btn {
     margin-top: 35px;
-    color: #7895b2;
+    color: #645caa;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -439,7 +442,7 @@ a:focus {
     top: 11px;
     right: 0;
     left: -30px;
-    background: #EF233C;
+    background: #A084ca;
     z-index: -1;
 }
 
@@ -450,7 +453,7 @@ a:focus {
     height: 3px;
     top: 11px;
     left: 3px;
-    background: #EF233C;
+    background: #A084ca;;
     z-index: 1;
 }
 
@@ -503,6 +506,7 @@ a:focus {
 
 .about .about-text p {
     font-size: 16px;
+    text-align: justify;
 }
 
 .about .skills {
@@ -517,11 +521,27 @@ a:focus {
     display: inline-block;
     margin-bottom: 5px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: bolder;
 }
 
 .about .skill-name p:last-child {
     float: right;
+}
+
+.about .skill-name .html{
+    color: orange;
+}
+
+.about .skill-name .css{
+    color: yellow;
+}
+
+.about .skill-name .wordpress{
+    color: green;
+}
+
+.about .skill-name .ms{
+    color: blue;
 }
 
 .about .progress {
@@ -565,7 +585,7 @@ a:focus {
     content: '';
     position: absolute;
     width: 2px;
-    background: #7895b2;
+    background: #645caa;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -651,6 +671,7 @@ a:focus {
     position: relative;
     border-right: 5px solid #dddddd;
     box-shadow: 0 0 60px rgba(0, 0, 0, .08);
+    text-align: justify;
 }
 
 .experience .timeline .timeline-item.right .timeline-text {
@@ -743,7 +764,7 @@ a:focus {
 }
 
 .service .service-item:hover {
-    box-shadow: inset 800px 0 0 0 #7895b2;
+    box-shadow: inset 800px 0 0 0 #A084ca;
 }
 
 .service .service-icon {
@@ -753,7 +774,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #EF233C;
+    border: 1px solid #A084ca;
     background: #ffffff;
 }
 
@@ -772,6 +793,7 @@ a:focus {
     position: relative;
     width: calc(100% - 120px);
     padding: 0 30px;
+    text-align: justify;
 }
 
 .service .service-text h3 {
@@ -828,7 +850,7 @@ a:focus {
     font-size: 14px;
     font-weight: 600;
     color: #ffffff;
-    background: #EF233C;
+    background: #A084ca;
     border: 2px solid transparent;
     border-radius: 0;
     box-shadow: inset 0 0 0 50px #EF233C;
@@ -842,7 +864,7 @@ a:focus {
     color: #EF233C;
     background: transparent;
     box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    border-color: #A084ca;
 }
 
 .portfolio .portfolio-item {
@@ -907,7 +929,7 @@ a:focus {
     color: #EF233C;
     background: transparent;
     box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    border-color: #A084ca;
 }
 
 
@@ -1306,7 +1328,31 @@ a:focus {
     position: relative;
     width: 100%;
     margin: 45px 0;
-    background: #EF233C;
+    background:#7895b2;
+}
+.contact .footer_header i {
+    font-size: 20px;
+    color: #34b7a7;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #effbf9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container .contacts{
+    padding-top: 10px;
+}
+
+  .contact .info .email:hover i,
+.contact .footer_header:hover i,
+.contact .info .phone:hover i {
+  background: palevioletred;
+  color: #fff;
 }
 
 .contact .container-fluid {
@@ -1317,12 +1363,21 @@ a:focus {
 .contact .contact-form {
     position: relative;
     padding: 90px 0 90px 45px;
-    background: #EF233C;
+    
+}
+
+.contact .contact-form .footer_header{
+    color:#ffffff;
+    padding-bottom: 2px;
+}
+.contact .contact-form .text{
+    color: #ffffff;
+    padding-top: 5%;
 }
 
 .contact .contact-form input {
     color: #ffffff;
-    padding: 15px 0;
+    padding: 5px 0;
     background: none;
     border-radius: 0;
     border: none;
@@ -1464,12 +1519,13 @@ a:focus {
 /*******************************/
 .footer {
     position: relative;
-    margin-top: 45px;
-    background: #EF233C;
+    margin-top: 70px;
+    background: linear-gradient(#645caa, rgba(238, 66, 86, 0.95));
+    
 }
-
 .footer .container-fluid {
-    padding: 60px 0 0 0;
+    padding: 70px 0 0 0;
+    
 }
 
 .footer .footer-info {
@@ -1525,6 +1581,7 @@ a:focus {
     font-size: 20px;
     color: #ffffff;
     transition: .3s;
+    align-content: center;
 }
 
 .footer .footer-social a:last-child i {
