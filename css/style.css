@@ -1646,3 +1646,44 @@ a:focus {
         padding: 0 5px;
     }
 }
+.popup {
+    display: none; /* Hide the popup by default */
+    position: fixed; /* Fixed position to overlay the whole page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 5%;
+  }
+
+  /* Popup content */
+  .popup-content .pop{
+    color:#645caa;
+  }
+  .popup-content {
+    background-color: #fefefe;
+    margin: 20% auto; /* Center the popup vertically and horizontally */
+    padding: 20px;
+    width: 300px;
+    border-radius: 2%;
+  }
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  /* Styling for the button */
+  .button {
+    padding: 10px 20px;
+    background-color: #EF233C;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .button:hover{
+    background: #645caa;
+  }
