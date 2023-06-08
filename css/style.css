@@ -251,7 +251,7 @@ a:focus {
     margin-bottom: 75px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: linear-gradient(#645caa, rgba(238, 66, 86, 0.95)), url(img/home_.png);
+    background: linear-gradient(#645caa, rgba(238, 66, 86, 0.95)); /*url(img/home_.png);*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
